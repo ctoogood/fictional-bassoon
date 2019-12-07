@@ -21,7 +21,7 @@ margin:0;
             background-image: linear-gradient(
                 hsla(0, 0%, 60%, 0.3),
                 hsla(0, 0%, 60%, 0.3)),
-                url('https://res.cloudinary.com/dhat0b0ey/f_auto,q_70/calumtoogood/projects/allahabad/railway-attendant-allahabad.jpg');
+                url('https://res.cloudinary.com/dhat0b0ey/image/upload/v1540139015/calumtoogood/projects/allahabad/railway-attendant-allahabad.jpg');
             background-size: cover;
             background-position: center;
 
