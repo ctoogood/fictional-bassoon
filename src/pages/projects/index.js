@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 
 const Main = styled.main `
     max-width:1200px;

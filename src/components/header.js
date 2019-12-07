@@ -46,7 +46,7 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
     <Menu>
-      <Link className="link" to="/projects">PHOTOGRAPHY</Link> | 
+      <Link className="link" to="/projects/">PHOTOGRAPHY</Link> | 
       <Link className="link" to="/"> WEB DESIGN</Link> | 
       <Link className="link" to="/"> PHOTOJOURNALISM</Link>
     </Menu>
