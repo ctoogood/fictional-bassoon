@@ -17,7 +17,7 @@ margin:0;
 
     section {
         border-radius:5px;
-
+        @media only screen and (min-width:720px) {
             background-image: linear-gradient(
                 hsla(0, 0%, 60%, 0.3),
                 hsla(0, 0%, 60%, 0.3)),
@@ -29,7 +29,7 @@ margin:0;
             height:100%;
             width:100%;
 
-            @media only screen and (min-width:720px) {
+            
               background-attachment:fixed;
 
             }
