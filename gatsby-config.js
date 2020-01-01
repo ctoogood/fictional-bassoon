@@ -1,19 +1,20 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `CALUM TOOGOOD`,
     description: `Photography | Web Design | Photojournalism`,
     author: `@calumtoogood`,
   },
+
+  
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `calumtoogood`,
-      },
-    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -32,8 +33,20 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `src/images`,
+      },
+    },
+    'gatsby-background-image',
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `calumtoogood`,
+      },
+    },
   ],
-}
+};

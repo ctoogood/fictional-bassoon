@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { graphql, StaticQuery } from 'gatsby'
 
+
 const InstaContainer = styled.section `
     padding:1rem;
     @media only screen and (min-width:720px) {

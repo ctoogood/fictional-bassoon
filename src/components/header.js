@@ -6,6 +6,9 @@ import styled from "styled-components"
 const Main = styled.header `
   width:100%;
   margin-top:1rem;
+  @media only screen and (max-width:720px) {
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  }
 
   h1 {
     font-family:Josefin Sans;
@@ -27,6 +30,7 @@ const Menu = styled.section `
   font-family:Josefin Sans;
   font-weight:400;
   color: #707070;
+  padding-bottom:1rem;
 
   Link {
     font-size:1.2rem;
@@ -46,9 +50,9 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
     <Menu>
-      <Link className="link" to="/">PHOTOGRAPHY</Link> | 
-      <Link className="link" to="/"> WEB DESIGN</Link> | 
-      <Link className="link" to="/"> PHOTOJOURNALISM</Link>
+      <Link className="link" to="/projects">PHOTOGRAPHY</Link> | 
+      <Link className="link" to="/webdesign"> WEB DESIGN</Link> | 
+      <Link className="link" to="/photojournalism"> PHOTOJOURNALISM</Link>
     </Menu>
   </Main>
 )

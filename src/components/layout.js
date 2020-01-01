@@ -17,6 +17,7 @@ import "./layout.css"
 const Main = styled.main `
   margin:auto;
   max-width:1200px;
+  z-index:10;
 `
 
 const Layout = ({ children }) => {

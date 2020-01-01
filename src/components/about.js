@@ -3,7 +3,10 @@ import styled from 'styled-components'
 import Instagram from './instagram'
 
 const AboutContainer = styled.section `
-    margin:2rem;
+    margin:auto;
+    padding:2rem;
+    width:100%;
+    background-color:white;
 
 @media only screen and (min-width:720px) {
     display:grid;
@@ -46,11 +49,11 @@ const About = () => (
             <h1>About</h1>
             <hr />
             <p>I'm a keen photographer from the Shetland Islands.  I like to photograph a wide range of subjects such as the outdoors, travel, & industry.</p>
-            <p>I studied photography at college & photojournalism at university.  As well as a collection of photographic projects, I also have a series of my reportage/photojournlism work on display in the photojournalism section(coming soon).</p>
-            <p>I also design & build websites, you can see them by visiting the web design section(also coming soon)</p>
+            <p>I studied photography at college & photojournalism at university.  As well as a collection of photographic projects, I also have a series of my reportage/photojournlism work on display in the photojournalism section.</p>
+            <p>I also design & build websites.</p>
         </TextSection>
         <InstagramSection>
-            <Instagram />
+          <Instagram />
         </InstagramSection>
 
     </AboutContainer>

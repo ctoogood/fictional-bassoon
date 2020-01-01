@@ -19,6 +19,7 @@ const typography = new Typography({
       name: 'Josefin Sans',
       styles: [
         '200',
+        '300',
         '400',
         '700',
       ],
