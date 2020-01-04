@@ -123,7 +123,21 @@ const ProjectPage = () => (
         <hr />
 
         <div className="project-container">
-        <a href="https://www.johndory.uk" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.calumtoogood.com" target="_blank" rel="noopener noreferrer">
+        <div className="text-container">
+                <h2>Calum Toogood</h2>
+                <h3>Personal Portfolio Site</h3><br />
+            <Img className="photography-project" fluid={data.ctp.childImageSharp.fluid} /> 
+            <br />
+                <h3>This site!</h3>
+            </div>
+        </a>
+        </div>
+        
+        <hr />
+
+        <div className="project-container">
+        <a href="https://wonderful-booth-7f5bf9.netlify.com/" target="_blank" rel="noopener noreferrer">
         <div className="text-container">
                 <h2>THE JOHN DORY</h2>
                 <h3>Culinary Tales</h3>
@@ -182,28 +196,7 @@ query {
         }
       }
     }
-    zableen:file(name: { eq: "worker-cuts-plastics" }) {
-        childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      press:file(name: { eq: "belarus-journalist-1" }) {
-        childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      kosovo:file(name: { eq: "orthdox-image-kosovo" }) {
-        childImageSharp {
-          fluid(maxWidth: 2400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      bedouin:file(name: { eq: "bedouin-portrait" }) {
+    ctp:file(name: { eq: "ctp2" }) {
         childImageSharp {
           fluid(maxWidth: 2400) {
             ...GatsbyImageSharpFluid
