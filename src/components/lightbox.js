@@ -35,12 +35,20 @@ const PreviewButton = styled.button`
   border: none;
   padding: 0;
   margin: 0;
+  transition:opacity 0.3s linear;
+
+  &&:hover {
+    cursor:pointer;
+    opacity:0.8;
+  }
   
   .grid-image {
     @media only screen and (min-width:720px) {
       padding-top:100%;
       height:0;
     }
+
+    
   }
 `;
 
